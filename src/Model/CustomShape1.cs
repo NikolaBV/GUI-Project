@@ -5,15 +5,15 @@ using System.Drawing.Drawing2D;
 namespace Draw
 {
     [Serializable]
-    public class CustomShape : Shape
+    public class CustomShape1 : Shape
     {
         #region Constructor
         
-        public CustomShape(RectangleF rect) : base(rect)
+        public CustomShape1(RectangleF rect) : base(rect)
         {
         }
         
-        public CustomShape(CustomShape shape) : base(shape)
+        public CustomShape1(CustomShape1 shape) : base(shape)
         {
         }
         
@@ -81,16 +81,16 @@ namespace Draw
         {
             base.DrawSelf(grfx);
             
-            Matrix originalMatrix = grfx.Transform;
+            //Matrix originalMatrix = grfx.Transform;
             
-            Matrix rotationMatrix = new Matrix();
+            //Matrix rotationMatrix = new Matrix();
             
             float centerX = Rectangle.X + Rectangle.Width / 2;
             float centerY = Rectangle.Y + Rectangle.Height / 2;
             
-            rotationMatrix.RotateAt(ShapeAngle, new PointF(centerX, centerY));
+            //rotationMatrix.RotateAt(ShapeAngle, new PointF(centerX, centerY));
             
-            grfx.Transform = rotationMatrix;
+            //grfx.Transform = rotationMatrix;
             
             grfx.FillRectangle(new SolidBrush(FillColor), Rectangle.X, Rectangle.Y, Rectangle.Width, Rectangle.Height);
             grfx.DrawRectangle(new Pen(StrokeColor, Borderwidth), Rectangle.X, Rectangle.Y, Rectangle.Width, Rectangle.Height);
@@ -107,7 +107,7 @@ namespace Draw
                 new PointF(centerX, centerY),
                 new PointF(Rectangle.X + Rectangle.Width, Rectangle.Y + Rectangle.Height));
             
-            grfx.Transform = originalMatrix;
+            //grfx.Transform = originalMatrix;
         }
     }
 } 

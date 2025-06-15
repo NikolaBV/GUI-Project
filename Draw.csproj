@@ -73,13 +73,21 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\GUI\Program.cs" />
+    <Compile Include="src\Model\CustomShape2.cs" />
+    <Compile Include="src\Model\CustomShape3.cs" />
+    <Compile Include="src\Model\CustomShape4.cs" />
+    <Compile Include="src\Model\CustomShape5.cs" />
+    <Compile Include="src\Model\CustomShape6.cs" />
+    <Compile Include="src\Model\CustomShape8.cs" />
+    <Compile Include="src\Model\CustomShape9.cs" />
     <Compile Include="src\Model\ElipseShape.cs" />
     <Compile Include="src\Model\GroupShape.cs" />
     <Compile Include="src\Model\LineShape.cs" />
+    <Compile Include="src\Model\PracticeShape.cs" />
     <Compile Include="src\Model\RectangleShape.cs" />
     <Compile Include="src\Model\Shape.cs" />
-    <Compile Include="src\Model\CustomShape.cs" />
-    <Compile Include="src\Model\CustomShape7.cs" />
+    <Compile Include="src\Model\CustomShape1.cs" />
+    <Compile Include="src\Model\CustomShape0.cs" />
     <Compile Include="src\Processors\DialogProcessor.cs" />
     <Compile Include="src\Processors\DisplayProcessor.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

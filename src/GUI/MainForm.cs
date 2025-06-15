@@ -392,8 +392,71 @@ namespace Draw
         }
         private void toolStripButton12_Click_1(object sender, EventArgs e)
         {
-            dialogProcessor.AddRandomCustomShape7();
-            statusBar.Items[0].Text = "Последно действие: Рисуване на custom shape 7";
+            dialogProcessor.AddRandomCustomShape0();
+            statusBar.Items[0].Text = "Последно действие: Рисуване на CustomShape0 (Triangle)";
+            viewPort.Invalidate();
+        }
+
+        private void toolStripButton13_Click(object sender, EventArgs e)
+        {
+            dialogProcessor.AddRandomCustomShape2();
+            statusBar.Items[0].Text = "Последно действие: Рисуване на CustomShape2 (Circle with Lines)";
+            viewPort.Invalidate();
+        }
+
+        private void toolStripButton15_Click(object sender, EventArgs e)
+        {
+            dialogProcessor.AddRandomCustomShape3();
+            statusBar.Items[0].Text = "Последно действие: Рисуване на CustomShape3 (Circle with Diagonal)";
+            viewPort.Invalidate();
+        }
+
+        private void toolStripButton14_Click(object sender, EventArgs e)
+        {
+            dialogProcessor.AddRandomCustomShape3();
+            statusBar.Items[0].Text = "Последно действие: Рисуване на CustomShape3 (Circle with Diagonal)";
+            viewPort.Invalidate();
+        }
+
+        private void toolStripButton19_Click(object sender, EventArgs e)
+        {
+            dialogProcessor.AddRandomCustomShape4();
+            statusBar.Items[0].Text = "Последно действие: Рисуване на custom shape 4";
+            viewPort.Invalidate();
+        }
+
+        private void toolStripButton16_Click(object sender, EventArgs e)
+        {
+            dialogProcessor.AddRandomCustomShape5();
+            statusBar.Items[0].Text = "Последно действие: Рисуване на custom shape 5";
+            viewPort.Invalidate();
+        }
+
+        private void toolStripButton17_Click(object sender, EventArgs e)
+        {
+            dialogProcessor.AddRandomCustomShape6();
+            statusBar.Items[0].Text = "Последно действие: Рисуване на custom shape 6";
+            viewPort.Invalidate();
+        }
+
+        private void toolStripButton18_Click(object sender, EventArgs e)
+        {
+            dialogProcessor.AddRandomCustomShape8();
+            statusBar.Items[0].Text = "Последно действие: Рисуване на custom shape 8";
+            viewPort.Invalidate();
+        }
+
+        private void toolStripButton20_Click(object sender, EventArgs e)
+        {
+            dialogProcessor.AddRandomCustomShape9();
+            statusBar.Items[0].Text = "Последно действие: Рисуване на custom shape 9";
+            viewPort.Invalidate();
+        }
+
+        private void toolStripButton21_Click(object sender, EventArgs e)
+        {
+            dialogProcessor.AddPracticeShape();
+            statusBar.Items[0].Text = "Последно действие: Рисуване на упражнение";
             viewPort.Invalidate();
         }
     }

@@ -106,27 +106,13 @@ namespace Draw
             Random rnd = new Random();
             int x = rnd.Next(100, 1000);
             int y = rnd.Next(100, 600);
-            CustomShape customShape = new CustomShape(new Rectangle(x, y, 120, 80));
+            CustomShape1 customShape = new CustomShape1(new Rectangle(x, y, 120, 80));
             customShape.FillColor = currentFillColor;
             customShape.StrokeColor = currentBorderColor;
             customShape.Borderwidth = currentWidth;
             ShapeList.Add(customShape);
         }
 
-        /// <summary>
-        /// Добавя примитив - custom shape7 на произволно място върху клиентската област.
-        /// </summary>
-        public void AddRandomCustomShape7()
-        {
-            Random rnd = new Random();
-            int x = rnd.Next(100, 1000);
-            int y = rnd.Next(100, 600);
-            CustomShape7 customShape7 = new CustomShape7(new Rectangle(x, y, 100, 100));
-            customShape7.FillColor = currentFillColor;
-            customShape7.StrokeColor = currentBorderColor;
-            customShape7.Borderwidth = currentWidth;
-            ShapeList.Add(customShape7);
-        }
 
         /// <summary>
         /// Проверява дали дадена точка е в елемента.
@@ -367,5 +353,119 @@ namespace Draw
                 }
             }
         }
+        public void AddRandomCustomShape0()
+        {
+            Random rnd = new Random();
+            int x = rnd.Next(100, 1000);
+            int y = rnd.Next(100, 600);
+            CustomShape0 customShape0 = new CustomShape0(new Rectangle(x, y, 100, 100));
+            customShape0.FillColor = currentFillColor;
+            customShape0.StrokeColor = currentBorderColor;
+            customShape0.Borderwidth = currentWidth;
+            ShapeList.Add(customShape0);
+        }
+
+
+        /// <summary>
+        /// Добавя примитив - CustomShape2 на произволно място върху клиентската област.
+        /// </summary>
+        public void AddRandomCustomShape2()
+        {
+            Random rnd = new Random();
+            int x = rnd.Next(100, 1000);
+            int y = rnd.Next(100, 600);
+            CustomShape2 customShape2 = new CustomShape2(new Rectangle(x, y, 100, 100));
+            customShape2.FillColor = currentFillColor;
+            customShape2.StrokeColor = currentBorderColor;
+            customShape2.Borderwidth = currentWidth;
+            ShapeList.Add(customShape2);
+        }
+
+        /// <summary>
+        /// Добавя примитив - CustomShape3 на произволно място върху клиентската област.
+        /// </summary>
+        public void AddRandomCustomShape3()
+        {
+            Random rnd = new Random();
+            int x = rnd.Next(100, 1000);
+            int y = rnd.Next(100, 600);
+            CustomShape3 customShape3 = new CustomShape3(new Rectangle(x, y, 100, 100));
+            customShape3.FillColor = currentFillColor;
+            customShape3.StrokeColor = currentBorderColor;
+            customShape3.Borderwidth = currentWidth;
+            ShapeList.Add(customShape3);
+        }
+        public void AddRandomCustomShape4()
+        {
+            Random rnd = new Random();
+            int x = rnd.Next(100, 1000);
+            int y = rnd.Next(100, 600);
+            CustomShape4 customShape4 = new CustomShape4(new Rectangle(x, y, 120, 80));
+            customShape4.FillColor = currentFillColor;
+            customShape4.StrokeColor = currentBorderColor;
+            customShape4.Borderwidth = currentWidth;
+            ShapeList.Add(customShape4);
+        }
+
+        public void AddRandomCustomShape5()
+        {
+            Random rnd = new Random();
+            int x = rnd.Next(100, 1000);
+            int y = rnd.Next(100, 600);
+            CustomShape5 customShape5 = new CustomShape5(new Rectangle(x, y, 100, 100));
+            customShape5.FillColor = currentFillColor;
+            customShape5.StrokeColor = currentBorderColor;
+            customShape5.Borderwidth = currentWidth;
+            ShapeList.Add(customShape5);
+        }
+
+        public void AddRandomCustomShape6()
+        {
+            Random rnd = new Random();
+            int x = rnd.Next(100, 1000);
+            int y = rnd.Next(100, 600);
+            CustomShape6 customShape6 = new CustomShape6(new Rectangle(x, y, 120, 80));
+            customShape6.FillColor = currentFillColor;
+            customShape6.StrokeColor = currentBorderColor;
+            customShape6.Borderwidth = currentWidth;
+            ShapeList.Add(customShape6);
+        }
+
+        public void AddRandomCustomShape8()
+        {
+            Random rnd = new Random();
+            int x = rnd.Next(100, 1000);
+            int y = rnd.Next(100, 600);
+            CustomShape8 customShape8 = new CustomShape8(new Rectangle(x, y, 100, 100));
+            customShape8.FillColor = currentFillColor;
+            customShape8.StrokeColor = currentBorderColor;
+            customShape8.Borderwidth = currentWidth;
+            ShapeList.Add(customShape8);
+        }
+
+        public void AddRandomCustomShape9()
+        {
+            Random rnd = new Random();
+            int x = rnd.Next(100, 1000);
+            int y = rnd.Next(100, 600);
+            CustomShape9 customShape9 = new CustomShape9(new Rectangle(x, y, 100, 100));
+            customShape9.FillColor = currentFillColor;
+            customShape9.StrokeColor = currentBorderColor;
+            customShape9.Borderwidth = currentWidth;
+            ShapeList.Add(customShape9);
+        }
+
+        public void AddPracticeShape() {
+            Random rnd = new Random();
+            int x = rnd.Next(100, 1000);
+            int y = rnd.Next(100, 600);
+            PracticeShape customShape9 = new PracticeShape(new Rectangle(x, y, 100, 100));
+            customShape9.FillColor = currentFillColor;
+            customShape9.StrokeColor = currentBorderColor;
+            customShape9.Borderwidth = currentWidth;
+            ShapeList.Add(customShape9);
+
+        }
+
     }
 }
