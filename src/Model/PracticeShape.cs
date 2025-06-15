@@ -51,17 +51,40 @@ namespace Draw
 
             float centerX = Rectangle.X + Rectangle.Width / 2;
             float centerY = Rectangle.Y + Rectangle.Height / 2;
+            float radiusX = Rectangle.Width / 2;
+            float radiusY = Rectangle.Height / 2;
 
-            grfx.FillRectangle(new SolidBrush(FillColor), Rectangle.X, Rectangle.Y, Rectangle.Width, Rectangle.Height);
-            grfx.DrawRectangle(Pens.Black, Rectangle.X, Rectangle.Y, Rectangle.Width, Rectangle.Height);
+            grfx.FillEllipse(new SolidBrush(FillColor), Rectangle.X, Rectangle.Y, Rectangle.Width, Rectangle.Height);
+            grfx.DrawEllipse(new Pen(StrokeColor, Borderwidth), Rectangle.X, Rectangle.Y, Rectangle.Width, Rectangle.Height);
 
+            float angle1 = 225 * (float)Math.PI / 180;
+            PointF bottomLeft = new PointF(
+                centerX + radiusX * (float)Math.Cos(angle1),
+                centerY + radiusY * (float)Math.Sin(angle1)
+            );
 
-            grfx.DrawLine(new Pen(StrokeColor, Borderwidth), new PointF(Rectangle.X, Rectangle.Y + Rectangle.Height), new PointF(centerX, centerY));
+            float angle2 = 45 * (float)Math.PI / 180;
+            PointF topRight = new PointF(
+                centerX + radiusX * (float)Math.Cos(angle2),
+                centerY + radiusY * (float)Math.Sin(angle2)
+            );
 
-            grfx.DrawLine(new Pen(StrokeColor, Borderwidth), new PointF(centerX, centerY), new PointF(centerX + Rectangle.Width / 2, Rectangle.Y + Rectangle.Height / 2));
-            grfx.DrawLine(new Pen(StrokeColor, Borderwidth), new PointF(centerX, centerY), new PointF(centerX, Rectangle.Y));
+            float angle3 = 315 * (float)Math.PI / 180;
+            PointF bottomRight = new PointF(
+                centerX + radiusX * (float)Math.Cos(angle3),
+                centerY + radiusY * (float)Math.Sin(angle3)
+            );
 
+            float angle4 = 135 * (float)Math.PI / 180;
+            PointF topLeft = new PointF(
+                centerX + radiusX * (float)Math.Cos(angle4),
+                centerY + radiusY * (float)Math.Sin(angle4)
+            );
 
+            grfx.DrawLine(new Pen(StrokeColor, Borderwidth), bottomLeft, new PointF(centerX, centerY));
+            grfx.DrawLine(new Pen(StrokeColor, Borderwidth), new PointF(centerX, centerY), topRight);
+            grfx.DrawLine(new Pen(StrokeColor, Borderwidth), bottomRight, new PointF(centerX, centerY));
+            grfx.DrawLine(new Pen(StrokeColor, Borderwidth), new PointF(centerX, centerY), topLeft);
         }
     }
 }
